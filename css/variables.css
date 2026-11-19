@@ -1,0 +1,26 @@
+:root{
+    --primary: #8B2C2C;
+    --secondary: #EE3232;
+    --background: #F4F0EC;
+    --cards:#151822;
+
+    --radius-med: 16px;
+    --radius-big: 28px;
+
+    --margin-med: 40px;
+    --margin-small: 30px;
+    --margin-hero: 35px;
+    --margin-big: 50px;
+    --margin-very-big: 100px;
+
+    --font-big: 40px;
+    --font-title: 36px;
+    --font-card-title: 32px;
+    --font-hero-btn: 28px;
+    --font-nav: 20px;
+    --font-card-subtitle: 24px;
+    --font-small: 16px;
+    --font-event: 18px;
+    --font-very-small:14px; 
+
+}

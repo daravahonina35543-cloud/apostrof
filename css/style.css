@@ -1,0 +1,986 @@
+@import"./variables.css";
+@import"./font.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+header{
+    background-color: var(--cards);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo{
+    max-width: 209px;
+    width: 100%;
+    height: auto;
+}
+
+.nav-link{
+    font-size: var(--font-nav);
+    margin-right: var(--margin-small);
+    text-decoration: none;
+    color: var(--background);
+    font-family: "Lora", sans-serif;
+    font-weight: 600;
+}
+
+.nav-cont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.head-img{
+    max-width: 400px;
+    width: auto;
+    height: auto;
+    
+}
+
+main{
+    margin-top: var(--margin-med);
+}
+
+.hero-section{
+    background-color: var(--cards);
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--radius-med);
+    margin-top: var(--margin-med);
+    margin-bottom: var(--margin-med);
+}
+
+.hero-block{
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--margin-big);
+    margin-left: var(--margin-very-big);
+}
+
+.hero-title{
+    font-family: "Kurale", sans-serif;
+    font-size: var(--font-card-title);
+    color: var(--secondary);
+}
+
+.hero-subtitle{
+    font-family: "Kurale", sans-serif;
+    font-size: var(--font-card-subtitle);
+    color: var(--background);
+}
+
+.hero-text{
+    max-width: 551px;
+    width: auto;
+    font-family: "Lora", sans-serif;
+    font-size: var(--font-nav);
+    color: var(--background);
+    line-height: 29px;
+    margin-top: var(--margin-hero);
+}
+
+.hero-btn{
+    border-radius: var(--radius-big);
+    background-color: var(--primary);
+    color: var(--background);
+    font-size: var(--font-hero-btn);
+    border:none;
+    font-weight: 600;
+    font-family: "Lora", sans-serif;
+    padding: 15px var(--margin-big);
+    margin-top: var(--margin-med);
+    max-width: 301px;
+}
+
+.gogol{
+    border-radius: 0px var(--radius-med) var(--radius-med) 0px;
+    margin-left: 210px;
+}
+
+.title{
+    color: var(--primary);
+    font-size: var(--font-title);
+    font-family: "Kurale", sans-serif;
+    margin-bottom: var(--radius-med);
+}
+
+.poetry{
+    margin-top: var(--margin-med);
+    display: flex;
+    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 72px;
+    margin-bottom: var(--margin-med);
+}
+
+.poetry-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cards);
+    padding: var(--margin-med) var(--margin-med)  80px;
+    border-radius: var(--radius-med);
+    align-items: center;
+}
+
+.poet{
+    border-radius: 100%;
+}
+
+.poet-name{
+    font-size: var(--font-card-subtitle);
+    color: var(--background);
+    font-family: "Kurale";
+    margin-top: 10px;
+}
+
+.poesy-name{
+    font-family: "Kurale",sans-serif;
+    font-size: var(--font-nav);
+    color: var(--secondary);
+    margin-top: var(--margin-small);
+}
+
+.poesy{
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-small);
+    color: var(--background);
+    line-height: 20px;
+    margin-top: 10px;
+}
+
+.poetry-btn{
+    border-radius: var(--radius-big);
+    border: none;
+    padding: 10px 38px;
+    margin-top: var(--margin-small);
+    background-color: var(--primary);
+    font-family: "Lora", sans-serif;
+    font-size: var(--font-nav);
+    font-weight: 600;
+    color: var(--background);
+}
+
+.event-card{
+    display: flex;
+    flex-direction: row;
+    border-radius: var(--radius-med);
+    padding-right: var(--margin-big);
+    background-color: var(--cards);
+    margin-top: var(--margin-med);
+}
+
+.ahmatova{
+    border-radius:  var(--radius-med) 0px 0px var(--radius-med) ;
+}
+
+.event-block{
+    display: flex;
+    flex-direction: column;
+    padding-top: var(--margin-big);
+    padding-left: var(--margin-big);   
+}
+
+.event-title{
+    font-family: "Kurale", sans-serif;
+    font-size: var(--font-hero-btn);
+    color: var(--secondary);
+}
+
+.event-title-white{
+    font-family: "Kurale", sans-serif;
+    font-size: var(--font-hero-btn);
+    color: var(--background);
+}
+
+.event-text{
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    color: var(--background);
+    font-size: var(--font-event);
+    max-width: 681px;
+    width: 100%;
+    margin-top: 5px;
+    line-height: 26px;
+    margin-bottom: var(--margin-small);
+}
+
+.event-icon-block{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.event-icon{
+    width: 100%;
+    max-width: 26px;
+    height: auto;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.event-icon-text{
+    font-size: var(--font-very-small);
+    color: var(--secondary);
+    font-family: "Lora",sans-serif;
+    font-weight: 400;
+}
+
+.event-btn{
+    margin-top: var(--margin-small);
+    background-color: var(--primary);
+    font-family: "Lora", sans-serif;
+    font-weight: 600;
+    color: var(--background);
+    font-size: var(--font-nav);
+    padding: 20px 30px;
+    border: none;
+    border-radius: var(--radius-med);
+    max-width: 261px;
+    width: 100%;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cards);
+    align-items: center;
+    margin-top: var(--margin-small);
+    padding-top: var(--margin-small);
+    padding-bottom: var(--margin-small);
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.foot{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-foot{
+    max-width: 146px;
+    width: 100%;
+    margin-right: 60px;
+}
+
+.foot-pt{
+    color: var(--background);
+    margin-right: 25px;
+    font-size: var(--font-nav);
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+}
+
+.foot-icons{
+    margin-left:var(--margin-big);
+}
+
+.foot-icon{
+    max-width: 42px;
+    width: 100%;
+    height: auto;
+    margin-left:10px ;
+}
+
+.company{
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--background);
+    margin-top: 20px;
+}
+
+.foot-nav{
+    display: flex;
+    flex-direction: row;
+}
+
+.subtitle{
+    margin-top: 15px;
+    font-weight: 600;
+    font-family: "Lora-Italic", sans-serif;
+    color: var(--primary);
+}
+
+.publication{
+    background-color: var(--cards);
+    display: flex;
+    flex-direction: row;
+    padding: var(--margin-big) 90px;
+    border-radius: var(--radius-med);
+    margin-top: var(--margin-med);
+    margin-bottom: var(--margin-med);
+}
+
+.pub-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 47px;
+}
+
+.pub-title{
+    color: var(--secondary);
+    font-family: "Kurale", sans-serif;
+    font-size: var(--font-big);
+}
+
+.pub-desc{
+    font-family: "Kurale", sans-serif;
+    font-size: var(--font-nav);
+    color: var(--background);
+    max-width: 712px;
+    width: 100%;
+    line-height: 30px;
+    margin-top: 5px;
+
+}
+
+.pub-inp{
+    border: none;
+    border-radius: var(--radius-big);
+    background-color: var(--background);
+    color: var(--cards);
+    padding: 15px var(--margin-med);
+    max-width: 382px;
+    width: 100%;
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-small);
+    margin-top: 25px;
+}
+
+.pub-icon{
+    max-width: 20px;
+    width: 100%;
+    height: auto;
+    margin-left: 5px;
+}
+
+.pub-btn{
+    border: none;
+    border-radius: var(--radius-big);
+    background-color: var(--primary);
+    color: var(--background);
+    padding: 15px var(--margin-med);
+    max-width: 222px;
+    width: 100%;
+    font-family: "Lora", sans-serif;
+    font-weight: 600;
+    font-size: var(--font-nav);
+    margin-top: 25px;
+}
+
+.pub-hand{
+    max-width: 376px;
+    width: 100%;
+}
+
+.cathegory{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: var(--margin-med);
+    margin-top: var(--margin-med);
+    gap: var(--margin-small);
+}
+
+.cat-btn{
+    background-color: var(--background);
+    border-radius: var(--radius-big);
+    padding: 10px 30px;
+    font-family: "Lora", sans-serif;
+    font-size: var(--font-nav);
+    color: var(--cards) ;
+    border: 3px solid var(--primary);
+}
+
+.cat-btn:hover{
+    background-color: var(--cards);
+    border: 3px solid var(--cards);
+    color: var(--background);
+}
+
+.posts-block{
+    display: flex;
+    flex-direction: row;
+}
+
+.post-themes{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: var(--cards);
+    border-radius: var(--radius-med);
+    padding: 25px 30px;
+    margin-right: 102px;
+    max-height: fit-content;
+    
+}
+
+.themes-title{
+    color: var(--secondary);
+    font-size: var(--font-card-title);
+    font-family: "Lora", sans-serif;
+}
+
+.themes-check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.themes-check-input{
+    appearance: none;
+    border-radius: 50%;
+    background-color: var(--background);
+    width: 25px;
+    height: 25px;
+    margin-right: 10px;
+}
+.themes-check-input:checked{
+    background-color: var(--secondary);
+}
+
+.themes-check-text{
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    font-size: var(--font-nav);
+    color: var(--background);
+}
+.post-publications{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.post-publication{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cards);
+    padding: var(--margin-small);
+    border-radius: var(--radius-med);
+}
+.author{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.author-img{
+    max-width: 51px;
+    width: 100%;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.author-block{
+    display: flex;
+    flex-direction: column;
+}
+
+.author-block-name{
+    color: var(--background);
+    font-family: "Lora", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.author-block-data{
+    color: var(--background);
+    font-family: "Lora", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+.post-pub-name{
+    color: var(--secondary);
+    font-size: var(--font-card-subtitle);
+    font-family: "Kurale", sans-serif;
+
+}
+
+.post-pub-text{
+    max-width: 757px;
+    width: 100%;
+    color: var(--background);
+    font-size: var(--font-small);
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+}
+.post-pub-read{
+    color: var(--secondary);
+    font-family: "Lora", sans-serif;
+    font-weight: 400;
+    margin-top: 10px;
+    font-style: var(--font-very-small);
+}
+.post-pub-line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--secondary);
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.post-pub-counts{
+    display: flex;
+    flex-direction: row;
+    gap: var(--margin-small);
+    margin-top: 10px;
+}
+
+.post-count{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.post-count-icon{
+    max-width: 16px;
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+
+}
+.post-count-text{
+    color: var(--background);
+    font-family: "Lora", sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+@media (max-width: 1024px) {
+    .head-img{
+        display: none;
+    }
+    .subtitle{
+        text-align: center;
+    }
+
+    .cathegory{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .foot-nav{
+        display: flex;
+        flex-direction: column;
+    }
+    .post-themes{
+        height: auto;
+    }
+    .themes-check-input{
+        flex-shrink: 0;
+    }
+    .hero-section{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+    }
+    .gogol{
+        margin: 0;
+        border-radius: var(--radius-med);
+    }
+    .floral-main{
+        display: none;
+    }
+    .hero-block{
+        padding: var(--margin-med);
+    }
+    .hero-block{
+        margin: 0;
+    }
+    .poetry{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .ahmatova{
+        border-radius: var(--radius-med);
+        max-width: 300px;
+    }
+    .event-card{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 767px) {
+    .gogol {
+        display: block;
+        width: 36%;
+        max-width: 36%;
+        height: auto;
+        object-fit: cover;
+        margin-left: 0;
+        border-radius: 0 var(--radius-med) var(--radius-med) 0;
+    }
+
+    .hero-section {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+    }
+
+    .hero-block {
+        width: 64%;
+        min-width: 0;
+        margin: 0;
+        padding: 18px;
+        justify-content: flex-start;
+    }
+
+    .hero-title {
+        font-size: clamp(16px, 3.2vw, var(--font-card-title));
+        line-height: 1.2;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-subtitle {
+        font-size: clamp(13px, 2.5vw, var(--font-card-subtitle));
+        line-height: 1.2;
+    }
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+        font-size: clamp(10px, 1.8vw, var(--font-nav));
+        line-height: 1.4;
+        margin-top: 12px;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 10px 12px;
+        margin-top: 16px;
+        font-size: clamp(12px, 2vw, var(--font-hero-btn));
+    }
+
+    .nav-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head-img,
+    .floral,
+    .floral-main,
+    .ahmatova,
+    .pub-hand,
+    .gogol {
+        display: none;
+    }
+
+    .poetry {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+        width: 100%;
+    }
+
+    .poetry-card {
+        min-width: 0;
+    }
+
+    .poet_img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .poesy-name,
+    .poesy {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .event-card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        min-width: 0;
+        padding: 20px;
+    }
+
+    .event-block {
+        width: 100%;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .event-text {
+        display: none;
+    }
+
+    .event-title,
+    .event-title-white,
+    .event-icon-text {
+        overflow-wrap: anywhere;
+    }
+
+    .event-btn {
+        max-width: 100%;
+    }
+
+    .foot {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        gap: 16px;
+    }
+
+    footer {
+        padding: 20px 12px;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-foot {
+        margin-right: 0;
+    }
+
+    .foot-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .foot-pt {
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .foot-icons {
+        margin: 0;
+    }
+
+    .foot-icon {
+        max-width: 36px;
+    }
+
+    .title,
+    .subtitle {
+        text-align: center;
+    }
+
+    .publication {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        padding: 20px;
+    }
+
+    .pub-text {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+    }
+
+    .pub-title,
+    .pub-desc {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .pub-desc {
+        line-height: 1.5;
+    }
+
+    .pub-inp,
+    .pub-btn {
+        max-width: 100%;
+    }
+
+    .cathegory {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        width: 100%;
+    }
+
+    .cat-btn {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .posts-block {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+        padding-left: 0;
+    }
+
+    .post-themes {
+        width: 100%;
+        min-width: 0;
+        margin-right: 0;
+        margin-bottom: var(--margin-med);
+    }
+
+    .themes-check {
+        min-width: 0;
+    }
+
+    .themes-check-input {
+        flex: 0 0 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .themes-check-text {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    .post-publications {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        min-width: 0;
+    }
+
+    .post-publication {
+        width: 100%;
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .author,
+    .author-block {
+        min-width: 0;
+    }
+
+    .post-pub-name,
+    .post-pub-text {
+        display: block;
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .post-pub-line {
+        max-width: 100%;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 360px) {
+    .hero-block {
+        padding: 10px;
+    }
+
+    .hero-title {
+        font-size: 14px;
+    }
+
+    .hero-subtitle {
+        font-size: 12px;
+    }
+
+    .hero-text {
+        font-size: 9px;
+    }
+
+    .hero-btn,
+    .poetry-btn,
+    .event-btn,
+    .pub-btn,
+    .cat-btn {
+        display: block;
+        width: 100%;
+        min-width: 0;
+        max-width: 100%;
+        box-sizing: border-box;
+        white-space: normal;
+        overflow-wrap: anywhere;
+        padding: 8px 6px;
+        font-size: 11px;
+    }
+
+    .publication,
+    .post-publication,
+    .post-themes,
+    .event-card {
+        padding: 12px;
+        min-width: 0;
+    }
+
+    .post-pub-name {
+        font-size: 18px;
+    }
+
+    .post-pub-text {
+        font-size: 13px;
+    }
+
+    .cathegory,
+    .poetry,
+    .poetry-card,
+    .event-block,
+    .pub-text,
+    .posts-block,
+    .post-publications {
+        min-width: 0;
+        max-width: 100%;
+    }
+    .title {
+    font-size: 24px;
+    max-width: 100%;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+}
