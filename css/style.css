@@ -983,4 +983,131 @@ footer{
     text-align: center;
     overflow-wrap: anywhere;
 }
+    header {
+        padding-left: 0;
+    }
+
+    header .container,
+    main .container {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .nav-cont {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nav-logo {
+        max-width: 75%;
+    }
+
+    .nav {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .nav-link {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+
+    .hero-section {
+        width: 100%;
+        min-width: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-block {
+        width: 100%;
+        min-width: 0;
+        padding: 12px;
+    }
+
+    .gogol {
+        width: 100%;
+        max-width: 180px;
+        height: auto;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .hero-title,
+    .hero-subtitle,
+    .hero-text {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+    }
+
+    .hero-btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px 5px;
+    }
+
+    .poetry,
+    .poetry-card,
+    .event-card,
+    .event-block {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+    }
+
+    .poetry-card {
+        padding: 12px 8px;
+    }
+
+    .poetry-btn,
+    .event-btn {
+        width: 100%;
+        max-width: 100%;
+        padding: 8px 5px;
+        white-space: normal;
+        overflow-wrap: anywhere;
+    }
+
+    .event-card {
+        padding: 10px;
+    }
+
+    .event-block {
+        padding: 0;
+    }
+
+    .event-icon-block {
+        min-width: 0;
+        max-width: 100%;
+    }
+
+    .event-icon-text {
+        min-width: 0;
+        overflow-wrap: anywhere;
+    }
+
+    footer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .foot,
+    .foot-nav {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .foot-pt {
+        max-width: 100%;
+        overflow-wrap: anywhere;
+        text-align: center;
+    }
+    .event-icon-block{
+        display: flex;
+        flex-direction: column;
+    }
 }
